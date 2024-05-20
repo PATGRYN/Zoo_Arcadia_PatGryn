@@ -1,0 +1,182 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #45af1c; /* Vert clair pour un fond accueillant */
+    color: #030303; /* Couleur du texte */
+    padding-bottom: 2rem;
+}
+
+header {
+    background: url('images/zoo-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: rgb(202, 140, 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #f39c12;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: rgb(209, 145, 6);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #f1c40f;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #27ae60; /* Couleur verte pour les titres de sections */
+}
+
+.habitat-container, .service-container, .animal-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.habitat, .service {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+    background: rgba(249, 250, 250, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(8, 163, 54, 0.2);
+}
+
+.habitat img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(12, 163, 12, 0.2);
+}
+
+.animal-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animal-gallery a {
+    margin: 10px;
+}
+
+.animal-image {
+    width: 200px; /* Taille des images des animaux */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.animal-image:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+.comment-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #555;
+}

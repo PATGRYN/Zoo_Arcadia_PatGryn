@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez Zoo Arcadia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            margin-top: -200; 
+            margin-bottom: -650px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#habitats">Habitats</a></li>
+                <li><a href="index.html#animals">Animaux</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#reviews">Avis</a></li>
+                <li><a href="index.html#connexion">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactez-nous</h1>
+        <p>Pour toute question ou demande de renseignements, veuillez remplir le formulaire ci-dessous ou nous contacter par téléphone ou email.</p>
+        <section>
+            <h2>Formulaire de Contact</h2>
+            <form action="envoyer_message.php" method="post">
+                <label for="nom">Votre nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+                <label for="email">Votre email :</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <section>
+            <h2>Autres Moyens de Contact</h2>
+            <p>Téléphone : +33 1 23 45 67 89</p>
+            <p>Email : contact@zooarcadia.fr</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zoo Arcadia. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

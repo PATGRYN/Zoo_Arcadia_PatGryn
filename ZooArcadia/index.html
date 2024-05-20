@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue au Zoo Arcadia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #connexion {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+</header>
+<nav>
+    <div class="logo"></div>
+    <ul>
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#habitats">Habitats</a></li>
+        <li><a href="#animals">Animaux</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Avis</a></li>
+        <li><a href="connexion.html" id="loginLink">Connexion (Vétérinaires et Personnel)</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div class="hero">
+    <h1>Bienvenue au Zoo Arcadia</h1>
+    <p>Découvrez la merveilleuse diversité de la faune tropicale, de la savane africaine et des marais en plein coeur de la Bretagne</p>
+</div>
+</header>
+    <main>
+        <section id="habitats">
+            <h2>Habitats</h2>
+            <div class="habitat-container">
+                <div class="habitat">
+                    <h3>Jungle</h3>
+                    <a href="jungle.html"><img class="habitat-image" src="images/forest.jpg" alt="Jungle"></a>
+                    <p>Découvrez les merveilles de la jungle avec ses plantes luxuriantes et ses différents animaux comme les chimpanzés, les orangs outans, les caméléons et les koalas !</p>
+                </div>
+                <div class="habitat">
+                    <h3>Savane Africaine</h3>
+                    <a href="savane.html"><img class="habitat-image" src="images/savannah.jpg" alt="Savane Africaine"></a>
+                    <p>Explorez la savane africaine et rencontrez les majestueux lions, éléphants et girafes.</p>
+                </div>
+                <div class="habitat">
+                    <h3>Marais</h3>
+                    <a href="marais.html"><img class="habitat-image" src="images/marais.jpg" alt="Marais"></a>
+                    <p>Plongez au cœur du marais breton et découvrez les hérons, les canards, les cigognes et si vous êtes chanceux, vous verrez même quelques loutres !</p>
+                </div>
+            </div>
+        </section>
+        <section id="animals">
+            <h2>Nos Animaux</h2>
+            <div class="animal-gallery">
+                <a href="orangoutan.html"><img class="animal-image" src="images/orangoutan.jpg" alt="Orang Outan"></a>
+                <a href="koala.html"><img class="animal-image" src="images/koala.jpg" alt="Koala"></a>
+                <a href="lion.html"><img class="animal-image" src="images/lion.jpg" alt="Lion"></a>
+                <a href="éléphant.html"><img class="animal-image" src="images/elephant.jpg" alt="Eléphant"></a>
+                <a href="girafe.html"><img class="animal-image" src="images/girafe.jpg" alt="Girafe"></a>
+                <a href="cigogne.html"><img class="animal-image" src="images/cigogne.jpg" alt="Cigogne"></a>
+                <a href="loutre.html"><img class="animal-image" src="images/loutre.jpg" alt="Loutre"></a>
+            </div>
+        </section>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <h3>Restauration</h3>
+                    <a href="restauration.html"><img class="services-image" src="images/restauration.jpg" alt="Restauration"></a>
+                    <p>Profitez de notre restaurant offrant une variété de plats pour tous les goûts.</p>
+                </div>
+                <div class="service">
+                    <h3>Visites Guidées</h3>
+                    <a href="train.html"><img class="services-image" src="images/train.jpg" alt="Petit train"></a>
+                    <p>Participez à nos visites guidées en petit train pour en apprendre davantage sur nos animaux et leurs habitats.</p>
+                </div>
+                <div class="service">
+                    <h3>Boutique de Souvenirs</h3>
+                    <a href="boutique.html"><img class="services-image" src="images/boutique.jpg" alt="Boutique"></a>
+                    <p>Ramenez chez vous un souvenir de votre visite au zoo grâce à notre boutique de souvenirs.</p>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section id="reviews">
+            <h2>Avis des Visiteurs</h2>
+            <div class="review">
+                <p>"Une expérience incroyable! Les habitats sont magnifiques et les animaux semblent très bien soignés."</p>
+                <p>- MarieB</p>
+            </div>
+            <div class="review">
+                <p>"Les enfants ont adoré la visite guidée et les nombreuses activités proposées."</p>
+                <p>- JeanPhiphi</p>
+            </div>
+            <div the="review">
+                <p>"Un endroit parfait pour passer une journée en famille. La restauration était également excellente!"</p>
+                <p>- Sophiedu33</p>
+            </div>
+             <!-- Formulaire de commentaires -->
+    <div class="comment-form">
+        <h3>Laissez un commentaire</h3>
+        <form action="ajouter_commentaire.php" method="post">
+            <label for="nom">Pseudo:</label>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="commentaire">Avis:</label>
+            <textarea id="commentaire" name="commentaire" required></textarea><br>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+        </section>
+        <section id="connexion">
+            <h2>Connexion pour le personnel</h2>
+            <a href="connexion.html">Connexion</a>
+            <form action="/login" method="post">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password"><br>
+                <button type="submit">Connexion</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: contact@zooarcadia.com</p>
+            <p>Téléphone: 01 23 45 67 89</p>
+            <p>Adresse: Avenue Charles Perthus, 35380 Paimpont, France</p>
+        </section>
+        <p>&copy; 2024 Zoo Arcadia. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        <a href="connexion.html">Connexion</a>
+        document.addEventListener('DOMContentLoaded', function() {
+            var loginLink = document.getElementById('loginLink'); // s'assurer que l'ID correspond à mon lien
+            var loginSection = document.getElementById('connexion');
+        
+            loginLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Stoppe l'action par défaut
+                loginSection.style.display = loginSection.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+        </script>        
+</body>
+</html>
